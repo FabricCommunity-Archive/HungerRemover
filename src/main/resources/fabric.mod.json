@@ -1,36 +1,33 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "hungerremover",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Hunger Remover",
+  "description": "Removes the hunger bar and makes food restore health",
   "authors": [
-    "Me!"
+    "MrIbby"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "https://curseforge.com/minecraft/mc-mods/hunger-remover",
+    "sources": "https://github.com/FabricCommunity/HungerRemover",
+    "issues": "https://github.com/FabricCommunity/HungerRemover/issues"
   },
 
   "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+  "icon": "assets/hungerremover/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "com.github.fabriccommunity.hungerremover.HungerRemoverMod"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "hungerremover.mixins.json"
   ],
 
   "depends": {
-    "fabricloader": ">=0.4.0",
-    "fabric": "*"
-  },
-  "suggests": {
-    "flamingo": "*"
+    "fabricloader": ">=0.4.0"
   }
 }
