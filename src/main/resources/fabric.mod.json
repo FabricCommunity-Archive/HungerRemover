@@ -18,7 +18,11 @@
   "icon": "assets/hungerremover/icon.png",
 
   "environment": "*",
-  "entrypoints": {},
+  "entrypoints": {
+    "main": [
+      "com.github.fabriccommunity.hungerremover.HungerRemoverMod"
+    ]
+  },
   "mixins": [
     "hungerremover.mixins.json"
   ],
