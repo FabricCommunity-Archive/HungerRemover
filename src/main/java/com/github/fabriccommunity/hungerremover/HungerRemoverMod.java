@@ -7,11 +7,14 @@ public class HungerRemoverMod implements ModInitializer {
     private static HungerRemoverConfig config;
 
     public static HungerRemoverConfig getConfig() {
+        if (config == null) {
+            config = ConfigManager.loadConfig(HungerRemoverConfig.class);
+        }
         return config;
     }
 
     @Override
     public void onInitialize() {
-        config = ConfigManager.loadConfig(HungerRemoverConfig.class);
+        // NO-OP
     }
 }

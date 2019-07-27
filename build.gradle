@@ -25,8 +25,8 @@ dependencies {
 
 	// PSA: Some older mods, compiled on Loom 0.2.1, might have outdated Maven POMs.
 	// You may need to force-disable transitiveness on them.
-	modCompile "io.github.cottonmc.cotton:cotton-config:1.0.0-rc.1"
-	include "io.github.cottonmc.cotton:cotton-config:1.0.0-rc.1"
+	modCompile "io.github.cottonmc.cotton:cotton:1.0.0-rc.2"
+	include "io.github.cottonmc.cotton:cotton:1.0.0-rc.2"
 }
 
 processResources {
